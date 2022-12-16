@@ -7,7 +7,7 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3 */
 
 using static System.Console;
-
+Clear();
 Write("Enter first number: ");
 int a = int.Parse(ReadLine()!);
 Write("Enter second number: ");
