@@ -2,5 +2,32 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using static System.Console;
+Clear();
+
+Write("input N:");
+if (!int.TryParse(ReadLine(), out int N))
+{
+    WriteLine("Error. Input number, not string");
+    return;
+}
+if (N > 0)
+{
+    int index = 1;
+    while (index <= N)
+    {
+        Write($"{Math.Pow(index, 3)} ");
+        index += 1;
+    }
+    WriteLine(" ");
+}
+else
+{
+    int index = -1;
+    while (index >= N)
+    {
+        Write($"{Math.Pow(index, 3)} ");
+        index -= 1;
+    }
+    WriteLine(" ");
+}
