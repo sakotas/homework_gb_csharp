@@ -32,6 +32,7 @@ WriteLine();
 WriteLine("======================");
 WriteLine($"Сумма элементов: стоящих на нечётных позициях: {SumOddPositionedElements(array)}");
 
+WriteLine();
 WriteLine("=======UNIT TESTS=======");
 int[] testArray1 = {3, 7, 23, 12};
 int[] testArray2 = {-4, -6, 89, 6};
